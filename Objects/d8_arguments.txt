@@ -1,0 +1,72 @@
+--release
+--output
+C:\Users\Sydne\OneDrive\Desktop\Codes\B4A\Endterm - SirMacky\Objects
+--lib
+C:\Android\platforms\android-36\android.jar
+--min-api
+21
+C:\Android\tools\..\extras\b4a_local\unpacked-b4ashared-63888229486000\dex_v1\b4ashared.zip
+c:\android\tools\..\extras\b4a_remote\androidx\multidex\multidex\2.0.1\unpacked-multidex-2.0.1\jars\classes.zip
+C:\Android\tools\..\extras\b4a_local\unpacked-audio-63888229486000\dex_v1\audio.zip
+C:\Android\tools\..\extras\b4a_local\unpacked-core-63888229486000\dex_v1\core.zip
+C:\Android\tools\..\extras\b4a_local\unpacked-sql-63888229488000\dex_v1\sql.zip
+C:\Android\tools\..\extras\b4a_local\unpacked-javaobject-63888229486000\dex_v1\javaobject.zip
+C:\Users\Sydne\OneDrive\Desktop\Codes\B4A\Endterm - SirMacky\Objects\dexed\b4a\example\collisionmanager.dex
+C:\Users\Sydne\OneDrive\Desktop\Codes\B4A\Endterm - SirMacky\Objects\dexed\b4a\example\gamemanager.dex
+C:\Users\Sydne\OneDrive\Desktop\Codes\B4A\Endterm - SirMacky\Objects\dexed\b4a\example\grid.dex
+C:\Users\Sydne\OneDrive\Desktop\Codes\B4A\Endterm - SirMacky\Objects\dexed\b4a\example\inputcontroller.dex
+C:\Users\Sydne\OneDrive\Desktop\Codes\B4A\Endterm - SirMacky\Objects\dexed\b4a\example\lb$1.dex
+C:\Users\Sydne\OneDrive\Desktop\Codes\B4A\Endterm - SirMacky\Objects\dexed\b4a\example\lb$B4AMenuItemsClickListener.dex
+C:\Users\Sydne\OneDrive\Desktop\Codes\B4A\Endterm - SirMacky\Objects\dexed\b4a\example\lb$HandleKeyDelayed.dex
+C:\Users\Sydne\OneDrive\Desktop\Codes\B4A\Endterm - SirMacky\Objects\dexed\b4a\example\lb$ResumeMessage.dex
+C:\Users\Sydne\OneDrive\Desktop\Codes\B4A\Endterm - SirMacky\Objects\dexed\b4a\example\lb$WaitForLayout.dex
+C:\Users\Sydne\OneDrive\Desktop\Codes\B4A\Endterm - SirMacky\Objects\dexed\b4a\example\lb.dex
+C:\Users\Sydne\OneDrive\Desktop\Codes\B4A\Endterm - SirMacky\Objects\dexed\b4a\example\lbmanager.dex
+C:\Users\Sydne\OneDrive\Desktop\Codes\B4A\Endterm - SirMacky\Objects\dexed\b4a\example\main$1.dex
+C:\Users\Sydne\OneDrive\Desktop\Codes\B4A\Endterm - SirMacky\Objects\dexed\b4a\example\main$B4AMenuItemsClickListener.dex
+C:\Users\Sydne\OneDrive\Desktop\Codes\B4A\Endterm - SirMacky\Objects\dexed\b4a\example\main$HandleKeyDelayed.dex
+C:\Users\Sydne\OneDrive\Desktop\Codes\B4A\Endterm - SirMacky\Objects\dexed\b4a\example\main$ResumeMessage.dex
+C:\Users\Sydne\OneDrive\Desktop\Codes\B4A\Endterm - SirMacky\Objects\dexed\b4a\example\main$WaitForLayout.dex
+C:\Users\Sydne\OneDrive\Desktop\Codes\B4A\Endterm - SirMacky\Objects\dexed\b4a\example\main.dex
+C:\Users\Sydne\OneDrive\Desktop\Codes\B4A\Endterm - SirMacky\Objects\dexed\b4a\example\piecefactory.dex
+C:\Users\Sydne\OneDrive\Desktop\Codes\B4A\Endterm - SirMacky\Objects\dexed\b4a\example\R$drawable.dex
+C:\Users\Sydne\OneDrive\Desktop\Codes\B4A\Endterm - SirMacky\Objects\dexed\b4a\example\R$style.dex
+C:\Users\Sydne\OneDrive\Desktop\Codes\B4A\Endterm - SirMacky\Objects\dexed\b4a\example\R.dex
+C:\Users\Sydne\OneDrive\Desktop\Codes\B4A\Endterm - SirMacky\Objects\dexed\b4a\example\renderer.dex
+C:\Users\Sydne\OneDrive\Desktop\Codes\B4A\Endterm - SirMacky\Objects\dexed\b4a\example\settingsmanager.dex
+C:\Users\Sydne\OneDrive\Desktop\Codes\B4A\Endterm - SirMacky\Objects\dexed\b4a\example\snake$1.dex
+C:\Users\Sydne\OneDrive\Desktop\Codes\B4A\Endterm - SirMacky\Objects\dexed\b4a\example\snake$B4AMenuItemsClickListener.dex
+C:\Users\Sydne\OneDrive\Desktop\Codes\B4A\Endterm - SirMacky\Objects\dexed\b4a\example\snake$HandleKeyDelayed.dex
+C:\Users\Sydne\OneDrive\Desktop\Codes\B4A\Endterm - SirMacky\Objects\dexed\b4a\example\snake$ResumableSub_SavePlayerScore.dex
+C:\Users\Sydne\OneDrive\Desktop\Codes\B4A\Endterm - SirMacky\Objects\dexed\b4a\example\snake$ResumeMessage.dex
+C:\Users\Sydne\OneDrive\Desktop\Codes\B4A\Endterm - SirMacky\Objects\dexed\b4a\example\snake$WaitForLayout.dex
+C:\Users\Sydne\OneDrive\Desktop\Codes\B4A\Endterm - SirMacky\Objects\dexed\b4a\example\snake.dex
+C:\Users\Sydne\OneDrive\Desktop\Codes\B4A\Endterm - SirMacky\Objects\dexed\b4a\example\snakegamemanager.dex
+C:\Users\Sydne\OneDrive\Desktop\Codes\B4A\Endterm - SirMacky\Objects\dexed\b4a\example\soundmanager.dex
+C:\Users\Sydne\OneDrive\Desktop\Codes\B4A\Endterm - SirMacky\Objects\dexed\b4a\example\spaceinvaders$1.dex
+C:\Users\Sydne\OneDrive\Desktop\Codes\B4A\Endterm - SirMacky\Objects\dexed\b4a\example\spaceinvaders$B4AMenuItemsClickListener.dex
+C:\Users\Sydne\OneDrive\Desktop\Codes\B4A\Endterm - SirMacky\Objects\dexed\b4a\example\spaceinvaders$HandleKeyDelayed.dex
+C:\Users\Sydne\OneDrive\Desktop\Codes\B4A\Endterm - SirMacky\Objects\dexed\b4a\example\spaceinvaders$ResumableSub_SavePlayerScore.dex
+C:\Users\Sydne\OneDrive\Desktop\Codes\B4A\Endterm - SirMacky\Objects\dexed\b4a\example\spaceinvaders$ResumeMessage.dex
+C:\Users\Sydne\OneDrive\Desktop\Codes\B4A\Endterm - SirMacky\Objects\dexed\b4a\example\spaceinvaders$WaitForLayout.dex
+C:\Users\Sydne\OneDrive\Desktop\Codes\B4A\Endterm - SirMacky\Objects\dexed\b4a\example\spaceinvaders.dex
+C:\Users\Sydne\OneDrive\Desktop\Codes\B4A\Endterm - SirMacky\Objects\dexed\b4a\example\spaceinvadersgamemanager.dex
+C:\Users\Sydne\OneDrive\Desktop\Codes\B4A\Endterm - SirMacky\Objects\dexed\b4a\example\starter$1.dex
+C:\Users\Sydne\OneDrive\Desktop\Codes\B4A\Endterm - SirMacky\Objects\dexed\b4a\example\starter$2.dex
+C:\Users\Sydne\OneDrive\Desktop\Codes\B4A\Endterm - SirMacky\Objects\dexed\b4a\example\starter$starter_BR.dex
+C:\Users\Sydne\OneDrive\Desktop\Codes\B4A\Endterm - SirMacky\Objects\dexed\b4a\example\starter.dex
+C:\Users\Sydne\OneDrive\Desktop\Codes\B4A\Endterm - SirMacky\Objects\dexed\b4a\example\tetris$1.dex
+C:\Users\Sydne\OneDrive\Desktop\Codes\B4A\Endterm - SirMacky\Objects\dexed\b4a\example\tetris$B4AMenuItemsClickListener.dex
+C:\Users\Sydne\OneDrive\Desktop\Codes\B4A\Endterm - SirMacky\Objects\dexed\b4a\example\tetris$HandleKeyDelayed.dex
+C:\Users\Sydne\OneDrive\Desktop\Codes\B4A\Endterm - SirMacky\Objects\dexed\b4a\example\tetris$ResumableSub_SavePlayerScore.dex
+C:\Users\Sydne\OneDrive\Desktop\Codes\B4A\Endterm - SirMacky\Objects\dexed\b4a\example\tetris$ResumeMessage.dex
+C:\Users\Sydne\OneDrive\Desktop\Codes\B4A\Endterm - SirMacky\Objects\dexed\b4a\example\tetris$WaitForLayout.dex
+C:\Users\Sydne\OneDrive\Desktop\Codes\B4A\Endterm - SirMacky\Objects\dexed\b4a\example\tetris.dex
+C:\Users\Sydne\OneDrive\Desktop\Codes\B4A\Endterm - SirMacky\Objects\dexed\b4a\example\tetromino.dex
+C:\Users\Sydne\OneDrive\Desktop\Codes\B4A\Endterm - SirMacky\Objects\dexed\b4a\example\designerscripts\LS_gameoverdialog.dex
+C:\Users\Sydne\OneDrive\Desktop\Codes\B4A\Endterm - SirMacky\Objects\dexed\b4a\example\designerscripts\LS_leaderboard.dex
+C:\Users\Sydne\OneDrive\Desktop\Codes\B4A\Endterm - SirMacky\Objects\dexed\b4a\example\designerscripts\LS_mainlayout.dex
+C:\Users\Sydne\OneDrive\Desktop\Codes\B4A\Endterm - SirMacky\Objects\dexed\b4a\example\designerscripts\LS_settingsdialog.dex
+C:\Users\Sydne\OneDrive\Desktop\Codes\B4A\Endterm - SirMacky\Objects\dexed\b4a\example\designerscripts\LS_snakelayout.dex
+C:\Users\Sydne\OneDrive\Desktop\Codes\B4A\Endterm - SirMacky\Objects\dexed\b4a\example\designerscripts\LS_spaceinvlayout.dex
+C:\Users\Sydne\OneDrive\Desktop\Codes\B4A\Endterm - SirMacky\Objects\dexed\b4a\example\designerscripts\LS_tetrislayout.dex
