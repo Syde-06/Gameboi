@@ -1,0 +1,219 @@
+﻿Build1=Default,b4a.example
+File1=Database.db
+File10=tetris_music.mp3
+File11=TetrisLayout.bal
+File2=game_over.mp3
+File3=GameOverDialog.bal
+File4=Leaderboard.bal
+File5=line_clear.mp3
+File6=MainLayout.bal
+File7=SettingsDialog.bal
+File8=SnakeLayout.bal
+File9=SpaceInvLayout.bal
+FileGroup1=Default Group
+FileGroup10=Default Group
+FileGroup11=Default Group
+FileGroup2=Default Group
+FileGroup3=Default Group
+FileGroup4=Default Group
+FileGroup5=Default Group
+FileGroup6=Default Group
+FileGroup7=Default Group
+FileGroup8=Default Group
+FileGroup9=Default Group
+Group=Tetris
+Library1=audio
+Library2=core
+Library3=sql
+Library4=javaobject
+ManifestCode='This code will be applied to the manifest file during compilation.~\n~'You do not need to modify it in most cases.~\n~'See this link for for more information: https://www.b4x.com/forum/showthread.php?p=78136~\n~AddManifestText(~\n~<uses-sdk android:minSdkVersion="21" android:targetSdkVersion="35"/>~\n~<supports-screens android:largeScreens="true" ~\n~    android:normalScreens="true" ~\n~    android:smallScreens="true" ~\n~    android:anyDensity="true"/>)~\n~SetApplicationAttribute(android:icon, "@drawable/icon")~\n~SetApplicationAttribute(android:label, "$LABEL$")~\n~CreateResourceFromFile(Macro, Themes.LightTheme)~\n~'End of default text.~\n~
+Module1=CollisionManager
+Module10=Snake
+Module11=SnakeGameManager
+Module12=SoundManager
+Module13=SpaceInvaders
+Module14=SpaceInvadersGameManager
+Module15=Starter
+Module16=Tetris
+Module17=Tetromino
+Module2=GameManager
+Module3=Grid
+Module4=InputController
+Module5=LB
+Module6=LBManager
+Module7=PieceFactory
+Module8=Renderer
+Module9=SettingsManager
+NumberOfFiles=11
+NumberOfLibraries=4
+NumberOfModules=17
+Version=13.4
+@EndOfDesignText@
+'========================================
+' MAIN ACTIVITY - Game Selection Menu
+' Navigation interface for selecting games
+'========================================
+#Region  Project Attributes 
+    #ApplicationLabel: GameBoi
+    #VersionCode: 1
+    #VersionName: 1.0
+    #SupportedOrientations: portrait
+    #CanInstallToExternalStorage: False
+#End Region
+
+#Region  Activity Attributes 
+    #FullScreen: True
+    #IncludeTitle: False
+#End Region
+
+Sub Process_Globals
+End Sub
+
+Sub Globals
+	' Menu UI components
+	Private pnlGameBoard As Panel
+	'Private lblTitle As Label
+	
+	' Game selection items
+	Private pnlTetris As Panel
+	Private lblTetris As Label
+	Private pnlSnake As Panel
+	Private lblSnake As Label
+	Private pnlSpaceInvaders As Panel
+	Private lblSpaceInvaders As Label
+	
+	' Navigation controls
+	Private btnUp As Button
+	Private btnDown As Button
+	Private btnBdrop As Button
+	
+	' Selection state
+	Private selectedIndex As Int = 0
+	Private gameOptions() As Panel
+End Sub
+
+Sub Activity_Create(FirstTime As Boolean)
+	Activity.LoadLayout("MainLayout")
+	InitializeMenu
+	UpdateSelection
+End Sub
+
+Sub Activity_Resume
+End Sub
+
+Sub Activity_Pause(UserClosed As Boolean)
+End Sub
+
+'========================================
+' INITIALIZATION
+'========================================
+Private Sub InitializeMenu
+	' Store game option panels for navigation
+	gameOptions = Array As Panel(pnlTetris, pnlSnake, pnlSpaceInvaders)
+	
+	' Set initial selection
+	selectedIndex = 0
+End Sub
+
+'========================================
+' NAVIGATION
+'========================================
+Private Sub UpdateSelection
+	' Reset all panels to unselected state
+	For i = 0 To gameOptions.Length - 1
+		Dim pnl As Panel = gameOptions(i)
+		If i = selectedIndex Then
+			' Selected state - highlight
+			pnl.Elevation = 20dip
+			ApplySelectionStyle(pnl, True)
+		Else
+			' Unselected state - normal
+			pnl.Elevation = 5dip
+			ApplySelectionStyle(pnl, False)
+		End If
+	Next
+End Sub
+
+Private Sub ApplySelectionStyle(panel As Panel, isSelected As Boolean)
+	If isSelected Then
+		' Add visual indicator for selection
+		panel.SetLayoutAnimated(150, panel.Left, panel.Top, panel.Width, panel.Height)
+		panel.Color = Colors.RGB(30,30,30)
+		Else
+		panel.Color = Colors.RGB(40,40,40)
+	End If
+End Sub
+
+'========================================
+' INPUT HANDLERS
+'========================================
+Sub btnUp_Click
+	MoveSelectionUp
+End Sub
+
+Sub btnDown_Click
+	MoveSelectionDown
+End Sub
+
+Sub btnSelect_Click
+	SelectCurrentGame
+End Sub
+
+
+Private Sub btnBdrop_Click
+	SelectCurrentGame
+End Sub
+
+Private Sub MoveSelectionUp
+	selectedIndex = selectedIndex - 1
+	If selectedIndex < 0 Then
+		selectedIndex = gameOptions.Length - 1
+	End If
+	UpdateSelection
+End Sub
+
+Private Sub MoveSelectionDown
+	selectedIndex = selectedIndex + 1
+	If selectedIndex >= gameOptions.Length Then
+		selectedIndex = 0
+	End If
+	UpdateSelection
+End Sub
+
+Sub SelectCurrentGame
+	Select selectedIndex
+		Case 0
+			' Launch Tetris
+			Starter.leaderboardManager.currentTableName = Starter.leaderboardManager.TABLE_TETRIS
+			StartActivity(Tetris)
+		Case 1
+			' Launch Snake
+			Starter.leaderboardManager.currentTableName = Starter.leaderboardManager.TABLE_SNAKE
+			StartActivity(Snake)
+		Case 2
+			' Launch Space Invaders
+			Starter.leaderboardManager.currentTableName = Starter.leaderboardManager.TABLE_SPACE
+			StartActivity(SpaceInvaders)
+	End Select
+End Sub
+
+'========================================
+' TOUCH HANDLERS FOR GAME PANELS
+'========================================
+Sub pnlTetris_Click
+	selectedIndex = 0
+	UpdateSelection
+	SelectCurrentGame
+End Sub
+
+Sub pnlSnake_Click
+	selectedIndex = 1
+	UpdateSelection
+	SelectCurrentGame
+End Sub
+
+Sub pnlSpaceInvaders_Click
+	selectedIndex = 2
+	UpdateSelection
+	SelectCurrentGame
+End Sub
